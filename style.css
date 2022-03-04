@@ -1,0 +1,47 @@
+body {
+  font-family: Helvetica;
+  margin: 10px auto;
+}
+
+.add-button {
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.spacing{
+  margin: 50px 0;
+}
+
+.task-bar{
+  width: 75%;
+}
+
+#tasks{
+  width: 100%;
+}
+
+.col-5{
+  padding-right: 30px;
+}
+
+.box{
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+}
+
+.red{
+  background-color: red;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.green{
+  background-color: green;
+}
+
+.red, .yellow, .green{
+  margin-top: 5px;
+}
