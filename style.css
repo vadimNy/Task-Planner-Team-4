@@ -1,6 +1,6 @@
 body {
   font-family: Helvetica;
-  margin: 10px auto;
+  margin: 10px;
 }
 
 .add-button {
@@ -13,25 +13,17 @@ body {
 }
 
 .task-bar{
-  width: 75%;
+  width: 80%;
 }
 
 #tasks{
   width: 100%;
 }
 
-.col-5{
-  padding-right: 30px;
-}
-
 .box{
   width: 15px;
   height: 15px;
   border: 1px solid black;
-}
-
-.red, .yellow, .green{
-  margin-top: 5px;
 }
 
 .custom-shadow {
@@ -46,6 +38,26 @@ button:hover, #button:hover{
   box-shadow: 0 4px 5px gray;
 }
 
-@media only screen and (max-width: 600px) {
+.task-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.task-buttons button {
+  width: 110px;
+}
+
+@media screen and (max-width: 600px) {
+  .task-buttons {
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0;
+  }
   
+  .task-buttons .btn {
+    width: 300px;
+  }
 }
